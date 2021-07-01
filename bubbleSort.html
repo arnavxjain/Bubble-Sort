@@ -1,0 +1,14 @@
+<script>
+    function bubbleSort(list) {
+        for (let x = 0; x < list.length; x++) {
+            for (let y = x + 1; y < list.length; y++) {
+                if (list[x] > list[y]) {
+                    [list[x], list[y]] = [list[y], list[x]]
+                }
+            }
+        }
+        return list
+    }
+
+    console.log(bubbleSort([6, 5, 7, 0, 2, 1]));
+</script>
